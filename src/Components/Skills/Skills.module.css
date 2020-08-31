@@ -1,0 +1,31 @@
+.Card {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.Card h2{
+    margin: 0px auto;
+    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 2px solid black;
+}
+.Card h3{
+    /* border-bottom: 1px solid black; */
+    width: 90%;
+    margin: 15px 8px 4px;
+}
+.Card .SkillList {
+    list-style-type: none;
+}
+.Card li {
+    list-style-type: none;
+}
+.Card .SkillList ul{    
+    padding-left: 8px;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
+}

@@ -1,0 +1,45 @@
+.App {
+  display: block;
+}
+.Card1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  z-index: 25;
+}
+.Resume {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.Card2 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 500px;
+  margin: 80px auto;
+  transition: transform .3s;
+  z-index: 20;
+  box-sizing: border-box;
+}
+.Card3 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 500px;
+  margin: 40px auto;
+  transition: transform .3s;
+  z-index: 15;
+}
+.Card4 {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 500px;
+  margin: 0px auto;
+  transition: transform .3s;
+  z-index: 10;
+}
+

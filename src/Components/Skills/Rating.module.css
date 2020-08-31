@@ -1,0 +1,8 @@
+.Star {
+    display: float;
+    float: right;
+    margin-right: 50px;
+}
+.Star img {
+    width: 15px;
+}

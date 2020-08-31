@@ -1,0 +1,30 @@
+.Card {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.Card h2{
+    margin: 0px auto;
+    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 2px solid black;
+}
+.Projects{ 
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 40px;
+    margin: 15px 8px;
+    width: fit-content;
+    list-style-type: none;  
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    list-style-position: inside;
+    transition: letter-spacing 0.3s;
+    cursor: pointer;
+}
+.Projects :hover {
+    letter-spacing: 1px;
+} 

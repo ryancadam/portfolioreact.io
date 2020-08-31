@@ -1,0 +1,35 @@
+.Card {
+    background-color: #47A8BD;
+    font-weight: bold; 
+    /* background-color: #639A88; */
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    min-width: 300px;
+    max-height: 100%;
+    padding: 20px;
+}
+
+.Card h2 {
+    margin: 0px auto;
+    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid black;
+}
+.Card h3, p {
+    margin: 10px auto;
+    width: fit-content;
+}
+.Card text {
+    margin: 10px auto;
+    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* .Card:hover {
+    transform: scale(1.05);
+} */

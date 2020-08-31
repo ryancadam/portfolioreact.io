@@ -1,0 +1,26 @@
+.Resume {
+    margin: 0px auto;
+    background-color: #F9F9F1;
+    box-sizing: border-box;
+    width: 800px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.637);
+    /* transition: transform 0.3s; */
+}
+.Header {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: space-between;
+    height: fit-content;
+    margin: 20px auto;
+}
+/* .Projects {
+
+} */
+/* .Experience {
+
+} */
+/* .Resume:hover {
+    transform: scale(1.03);
+} */

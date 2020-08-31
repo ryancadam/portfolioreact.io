@@ -1,0 +1,18 @@
+.Card {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.Card h2{
+    margin: 0px auto;
+    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 2px solid black;
+}
+    /* transition: transform 0.3s;
+    cursor: pointer;
+}
+.Card h2:hover {
+    transform: scale(1.1);
+} */
