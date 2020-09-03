@@ -23,7 +23,7 @@
     list-style-type: none;
 }
 .Card .SkillList ul{    
-    padding-left: 8px;
+    padding-left: 25px;
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;

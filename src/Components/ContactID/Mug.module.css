@@ -1,27 +1,7 @@
 .Mug img {
     display: block;
-    margin: 20px auto 5px;
+    margin: 20px 4px 5px;
     border-radius: 5px;
-    /* padding: 1px;  */
     width: 150px;
-    /* border: 1px solid black; */
     box-shadow: 1px 1px 5px 1px  rgba(0, 0, 0, 0.829);
-    transition: transform .3s;
 }
-.Mug:hover {
-    transform: scale(1.01s);
-}
-
-/* .Mug {
-    background-color: white;
-    padding: 8px;
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 50%;
-    border: 5px solid #badebf;
-}
-
-.Mug img {
-    max-width: 200px;
-    max-height: 200px;
-} */

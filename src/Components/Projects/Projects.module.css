@@ -23,8 +23,14 @@
     columns: 1;
     list-style-position: inside;
     transition: letter-spacing 0.3s;
-    cursor: pointer;
 }
-.Projects :hover {
+.Projects div{
+    font-weight: normal;
+    font-size: 14px;
+    margin: 4px 50px 4px 15px;
+    text-align: justify;
+}
+.Projects li:hover {
     letter-spacing: 1px;
+    cursor: pointer;
 } 

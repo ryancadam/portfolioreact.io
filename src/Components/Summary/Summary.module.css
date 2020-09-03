@@ -1,6 +1,9 @@
 .Card {
-    width: 500px;
-    margin: 30px 10px auto 50px;
+    width: 650px;
+    margin: 30px 10px auto 4px;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 18px;
 }
 .Card h2{
     margin: 0px auto;
@@ -9,10 +12,3 @@
     height: fit-content;
     border: 2px solid black;
 }
-
-    /* transition: transform 0.3s;
-    cursor: pointer;
-}
-.Card h2:hover {
-    transform: scale(1.1);
-} */

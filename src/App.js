@@ -5,10 +5,6 @@ import Resume from './Components/Resume/Resume';
 
 class App extends Component {
 
-  state={
-
-  }
-
   render () {
 
     return (

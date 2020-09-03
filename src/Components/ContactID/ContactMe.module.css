@@ -1,0 +1,15 @@
+.Contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 3px;
+    width: 200px;
+}
+.Contact img{
+    width: 20px;
+    transition: transform .3s ease-in-out;
+}
+.Contact img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Skills.module.css';
+
 import Rating from './Rating';
 
 const skills = props => (
@@ -25,7 +26,7 @@ const skills = props => (
                 <ul>
                     <li>Visual Studio Code<Rating five /></li>
                     <li>PyCharm<Rating three /></li>
-                    <li>Git<Rating three /></li>
+                    <li>Git<Rating two /></li>
                 </ul>
             </li>
         </ul>

@@ -1,8 +1,9 @@
 .Resume {
     margin: 0px auto;
+    padding-bottom: 20px;
     background-color: #F9F9F1;
     box-sizing: border-box;
-    width: 800px;
+    width: 1000px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.637);
     /* transition: transform 0.3s; */
@@ -15,12 +16,3 @@
     height: fit-content;
     margin: 20px auto;
 }
-/* .Projects {
-
-} */
-/* .Experience {
-
-} */
-/* .Resume:hover {
-    transform: scale(1.03);
-} */

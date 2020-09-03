@@ -1,0 +1,18 @@
+.Job {
+    border-top: 2px solid #4eb8cf;
+    margin-top: 8px;
+    padding: 3px;
+}
+.Job h4 {
+    border-bottom: 1px solid black;
+    width:fit-content;
+    text-align: left;
+    margin: 2px 0;
+}
+.Job div {
+    margin: 4px auto;
+}
+.Job p {
+    margin: 4px auto;
+    font-weight: bold;
+}
