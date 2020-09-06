@@ -1,0 +1,18 @@
+.Edu {
+    border-top: 2px solid #4eb8cf;
+    margin-top: 8px;
+    padding: 3px;
+}
+.Edu h4 {
+    border-bottom: 1px solid black;
+    width:fit-content;
+    text-align: left;
+    margin: 2px 0;
+}
+.Edu div {
+    margin: 4px auto;
+}
+.Edu p {
+    margin: 4px 0;
+    font-weight: bold;
+}
