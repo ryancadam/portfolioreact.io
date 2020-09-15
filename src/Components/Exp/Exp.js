@@ -7,6 +7,11 @@ const experience = props => (
     <div className={style.Card}>
         <h2>EXPERIENCE</h2>
         <ul className={style.Exp}>
+            <li id="Dev" onClick={props.clicked}>
+                Software Developer
+            </li>
+                <div>Freelance</div>
+                <p hidden={!props.showDev}><Summary Dev /></p>
             <li id="Teach" onClick={props.clicked}>
                 Substitute Teacher
             </li>

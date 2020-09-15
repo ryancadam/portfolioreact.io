@@ -12,6 +12,12 @@ const projects = (props) => {
     <div className={style.Card}>
       <h2>PROJECTS</h2>
       <ul className={style.Projects}>
+        <li id="Collage" onClick={props.clicked}>
+          Text Collage App
+        </li>
+        <div hidden={!props.showCollage}>
+          <Description Collage />
+        </div>
         <li id="Portfolio" onClick={props.clicked}>
           Portfolio Site
         </li>

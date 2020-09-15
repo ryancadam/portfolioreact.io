@@ -10,13 +10,18 @@ import Degree from "../Degree/Degree";
 class Resume extends Component {
   state = {
     // projects
+    showCollage: false,
     showPortfolio: false,
     showCutUp: false,
     showHW: false,
     showPWD: false,
+
     // work exp
+
+    showDev: false,
     showTeach: false,
     showFSA: false,
+
     // degree
     showDegree: false,
   };
@@ -26,6 +31,9 @@ class Resume extends Component {
     if (proj === "Portfolio") {
       const doesShow = this.state.showPortfolio;
       this.setState({ showPortfolio: !doesShow });
+    } else if (proj === "Collage") {
+      const doesShow = this.state.showCollage;
+      this.setState({ showCollage: !doesShow });
     } else if (proj === "CutUp") {
       const doesShow = this.state.showCutUp;
       this.setState({ showCutUp: !doesShow });
@@ -43,6 +51,9 @@ class Resume extends Component {
     if (exp === "Teach") {
       const doesShow = this.state.showTeach;
       this.setState({ showTeach: !doesShow });
+    } else if (exp === "Dev") {
+      const doesShow = this.state.showDev;
+      this.setState({ showDev: !doesShow });
     } else {
       const doesShow = this.state.showFSA;
       this.setState({ showFSA: !doesShow });
@@ -66,6 +77,7 @@ class Resume extends Component {
         <div>
           <Projects
             showPortfolio={this.state.showPortfolio}
+            showCollage={this.state.showCollage}
             showCutUp={this.state.showCutUp}
             showHW={this.state.showHW}
             showPWD={this.state.showPWD}
@@ -74,6 +86,7 @@ class Resume extends Component {
         </div>
         <div>
           <Experience
+            showDev={this.state.showDev}
             showTeach={this.state.showTeach}
             showFSA={this.state.showFSA}
             clicked={this.showExpHandler}

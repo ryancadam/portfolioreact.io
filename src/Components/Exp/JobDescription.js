@@ -6,7 +6,11 @@ import LocationIcon from '../../Media/Icons/General/Location.svg';
 const Icon = <img src={LocationIcon} style={{margin: "0 4px 0 12px"}} width="16px" alt="location" />
 
 const jobSum = props => {
-    if(props.Teach){
+    if(props.Dev){
+        return <div className={style.Job}>
+            <span>May ‘19 - present{Icon}<strong>Arlington, TX</strong></span>            
+            <p>Successfully conceived and designed a web-based portfolio site. Experience building friendly intuitive SPAs. Manage and complete multiple projects simultaneously. Presently learning to connect front-end apps to the MongoDB NoSQL database via Node and Express </p></div> 
+    } else if(props.Teach){
         return <div className={style.Job}>
             <span>Apr ‘17 – May ‘19{Icon}<strong>Arlington, TX</strong></span>            
             <p>Worked primarily with disadvantaged schools in an effort to provide mentorship to young students. Taught and/or assisted with technology classes, including some basic programming.</p></div> 
