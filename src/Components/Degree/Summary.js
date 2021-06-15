@@ -28,7 +28,7 @@ const summary = (props) => (
         <i>Global Insight</i>
       </a>
       , the school’s research journal for the humanities, Oct ‘20. <br />
-      &nbsp;Achieved the President’s List in both of my last two semesters.
+      &nbsp;Achieved the President’s List in each of my last two semesters.
     </p>
   </div>
 );
