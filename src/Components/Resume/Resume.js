@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import style from "./Resume.module.css";
 
 import ContactID from "../ContactID/ContactID";
@@ -7,100 +7,63 @@ import Experience from "../Exp/Exp";
 import Skills from "../Skills/Skills";
 import Degree from "../Degree/Degree";
 
-class Resume extends Component {
-  state = {
-    // projects
-    showCollage: false,
-    showPortfolio: false,
-    showCutUp: false,
-    showHW: false,
-    showPWD: false,
+const Resume = () => {
+  const [showInfosys, setShowInfosys] = useState(false);
+  const [showFreelance, setShowFreelance] = useState(false);
+  const [showTeach, setShowTeach] = useState(false);
+  const [showFSA, setShowFSA] = useState(false);
 
-    // work exp
+  const [showCollage, setShowCollage] = useState(false);
+  const [showPortfolio, setShowPortfolio] = useState(false);
+  const [showDegree, setShowDegree] = useState(false);
 
-    showDev: false,
-    showTeach: false,
-    showFSA: false,
-
-    // degree
-    showDegree: false,
-  };
-
-  showProjectHandler = (e) => {
-    const proj = e.target.id;
-    if (proj === "Portfolio") {
-      const doesShow = this.state.showPortfolio;
-      this.setState({ showPortfolio: !doesShow });
-    } else if (proj === "Collage") {
-      const doesShow = this.state.showCollage;
-      this.setState({ showCollage: !doesShow });
-    } else if (proj === "CutUp") {
-      const doesShow = this.state.showCutUp;
-      this.setState({ showCutUp: !doesShow });
-    } else if (proj === "HW") {
-      const doesShow = this.state.showHW;
-      this.setState({ showHW: !doesShow });
-    } else {
-      const doesShow = this.state.showPWD;
-      this.setState({ showPWD: !doesShow });
-    }
-  };
-
-  showExpHandler = (e) => {
+  const showExpHandler = (e) => {
     const exp = e.target.id;
-    if (exp === "Teach") {
-      const doesShow = this.state.showTeach;
-      this.setState({ showTeach: !doesShow });
-    } else if (exp === "Dev") {
-      const doesShow = this.state.showDev;
-      this.setState({ showDev: !doesShow });
-    } else {
-      const doesShow = this.state.showFSA;
-      this.setState({ showFSA: !doesShow });
-    }
+    if (exp === "Infosys") setShowInfosys(!showInfosys);
+    if (exp === "Teach") setShowTeach(!showTeach);
+    if (exp === "Freelance") setShowFreelance(!showFreelance);
+    if (exp === "FSA") setShowFSA(!showFSA);
   };
 
-  showEduHandler = (e) => {
-    const doesShow = this.state.showDegree;
-    this.setState({ showDegree: !doesShow });
+  const showProjectHandler = (e) => {
+    const proj = e.target.id;
+    if (proj === "Portfolio") setShowPortfolio(!showPortfolio);
+    if (proj === "Collage") setShowCollage(!showCollage);
   };
 
-  render() {
-    return (
-      <div className={style.Resume}>
-        <div className={style.Header}>
-          <ContactID />
-        </div>
-        <div>
-          <Skills />
-        </div>
-        <div>
-          <Projects
-            showPortfolio={this.state.showPortfolio}
-            showCollage={this.state.showCollage}
-            showCutUp={this.state.showCutUp}
-            showHW={this.state.showHW}
-            showPWD={this.state.showPWD}
-            clicked={this.showProjectHandler}
-          />
-        </div>
-        <div>
-          <Experience
-            showDev={this.state.showDev}
-            showTeach={this.state.showTeach}
-            showFSA={this.state.showFSA}
-            clicked={this.showExpHandler}
-          />
-        </div>
-        <div>
-          <Degree
-            showDegree={this.state.showDegree}
-            clicked={this.showEduHandler}
-          />
-        </div>
+  const showEduHandler = (e) => {
+    setShowDegree(!showDegree);
+  };
+
+  return (
+    <div className={style.Resume}>
+      <div className={style.Header}>
+        <ContactID />
       </div>
-    );
-  }
-}
+      <div>
+        <Skills />
+      </div>
+      <div>
+        <Experience
+          showInfosys={showInfosys}
+          showFreelance={showFreelance}
+          showTeach={showTeach}
+          showFSA={showFSA}
+          clicked={showExpHandler}
+        />
+      </div>
+      <div>
+        <Projects
+          showPortfolio={showPortfolio}
+          showCollage={showCollage}
+          clicked={showProjectHandler}
+        />
+      </div>
+      <div>
+        <Degree showDegree={showDegree} clicked={showEduHandler} />
+      </div>
+    </div>
+  );
+};
 
 export default Resume;

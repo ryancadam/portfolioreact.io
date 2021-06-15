@@ -11,21 +11,37 @@ const skills = (props) => (
         <h3>Languages</h3>
         <ul>
           <li>
+            TypeScript/JavaScript
+            <Rating four />
+          </li>
+          <li>
             Python
+            <Rating two />
+          </li>
+          <li>
+            Java
             <Rating threeHalf />
           </li>
           <li>
-            JavaScript
-            <Rating threeHalf />
+            SQL
+            <Rating three />
           </li>
         </ul>
       </li>
       <li>
         <h3>Development</h3>
         <ul>
+        <li>
+            Angular
+            <Rating threeHalf />
+          </li>
           <li>
             React
-            <Rating threeHalf />
+            <Rating four />
+          </li>
+          <li>
+            PostgreSQL
+            <Rating three />
           </li>
           <li>
             HTML5
@@ -34,14 +50,6 @@ const skills = (props) => (
           <li>
             CSS
             <Rating four />
-          </li>
-          <li>
-            Bootstrap
-            <Rating three />
-          </li>
-          <li>
-            Django
-            <Rating three />
           </li>
         </ul>
       </li>
@@ -53,12 +61,12 @@ const skills = (props) => (
             <Rating fourHalf />
           </li>
           <li>
-            PyCharm
+            Eclipse
             <Rating three />
           </li>
           <li>
-            Git
-            <Rating two />
+            Git/GitHub
+            <Rating three />
           </li>
         </ul>
       </li>
