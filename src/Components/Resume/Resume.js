@@ -53,14 +53,14 @@ const Resume = () => {
         />
       </div>
       <div>
+        <Degree showDegree={showDegree} clicked={showEduHandler} />
+      </div>
+      <div>
         <Projects
           showPortfolio={showPortfolio}
           showCollage={showCollage}
           clicked={showProjectHandler}
         />
-      </div>
-      <div>
-        <Degree showDegree={showDegree} clicked={showEduHandler} />
       </div>
     </div>
   );
